@@ -16,5 +16,7 @@
 	<classpathentry kind="lib" path="D:/Year 2 Semester 2[Feb]/Information Technology Project/JAR Files/javax.servlet-3.1.jar"/>
 	<classpathentry kind="lib" path="D:/Year 2 Semester 2[Feb]/Information Technology Project/JAR Files/mysql-connector-java-5.1.48-bin.jar"/>
 	<classpathentry kind="lib" path="D:/Year 2 Semester 2[Feb]/Information Technology Project/JAR Files/servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/Year 2 Semester 2[Feb]/Information Technology Project/JAR Files/activation.jar"/>
+	<classpathentry kind="lib" path="D:/Year 2 Semester 2[Feb]/Information Technology Project/JAR Files/mail.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

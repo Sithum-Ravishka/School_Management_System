@@ -1,0 +1,49 @@
+@charset "ISO-8859-1";
+
+.form-input {
+    font-size: 17px;
+    box-sizing: border-box;
+    width: 60%;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background: white;
+    outline: none;
+}
+
+.form-input1 {
+    font-size: 17px;
+    box-sizing: border-box;
+    width: 90%;
+    height: 80%;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    text-align: center;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background: white;
+    outline: none;
+}
+
+/* button */
+.ButtonC {
+   display:inline-block;
+   padding:10px 20px;
+   background-color: #0099ff;
+   font-size:17px;
+   border:none;
+   border-radius:5px;
+   color:#bcf5e7;
+   cursor:pointer;
+	width:100;
+}
+
+.ButtonC:hover {
+  background-color: #ff3300;
+  color:white;
+}
