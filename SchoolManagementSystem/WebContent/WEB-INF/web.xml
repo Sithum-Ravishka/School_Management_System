@@ -23,5 +23,22 @@
     	<servlet-name>ViewResultServlet</servlet-name>
     	<url-pattern>/view</url-pattern>
     </servlet-mapping>
+    
+      <servlet>
+		<servlet-name>ViewResultTeacherServlet</servlet-name>
+        <servlet-class>com.school.ViewResultTeacherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>ViewResultTeacherServlet</servlet-name>
+    	<url-pattern>/viewTeacher</url-pattern>
+    </servlet-mapping>
          
+    <servlet>
+		<servlet-name>UpdateResult</servlet-name>
+        <servlet-class>com.school.ResultUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>UpdateResult</servlet-name>
+    	<url-pattern>/update</url-pattern>
+    </servlet-mapping>     
 </web-app>

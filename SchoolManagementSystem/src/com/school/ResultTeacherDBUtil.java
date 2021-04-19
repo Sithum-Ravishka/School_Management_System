@@ -6,13 +6,14 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ResultDBUtil{
+
+public class ResultTeacherDBUtil{
 
 	private static boolean isSuccess;
 	private static Connection con = null;
 	private static Statement stmt = null;
 	private static ResultSet sr = null;
-//Insert Passenger Register Details
+	
 	
 	public static boolean studentresult(String studnetName, String admissionNo, String year, String classRoom,
 			String semester, String sinhlaMarks, String buddhismMarks,String mathsMarks,String scinceMarks,
@@ -38,6 +39,8 @@ public class ResultDBUtil{
 				}
 		return isSuccess;			
 	}
+	
+	
 	
 public static boolean validate(String admissionNo, String classRoom, String semester){
 		
@@ -117,7 +120,7 @@ public static boolean updatestudentresult(String studnetName, String admissionNo
 				con = DBConnect.getConnection();
 				stmt = con.createStatement();
 				
-				String sql = "update studentresult set studentName= '"+studnetName+"', admissionNo='"+admissionNo+"', year='"+year+"', classRoom='"+classRoom+"',semester='"+semester+"', sinhlaMarks='"+sinhlaMarks+"',buddhismMarks='"+buddhismMarks+"', mathsMarks='"+mathsMarks+"',scinceMarks='"+scinceMarks+"',englishMarks='"+englishMarks+"',historyMarks='"+historyMarks+"',citizenEducationMarks='"+citizenEducationMarks+"',tamilMarks='"+tamilMarks+"',geographyMarks='"+geographyMarks+"',healthandphysicaleducationMarks='"+healthandphysicaleducationMarks+"',homeEconomicsMarks='"+homeEconomicsMarks+"',aestheticsubjects='"+aestheticsubjects+"',aestheticsubjectsMarks='"+aestheticsubjectsMarks+"',totalMark='"+totalMark+"',average='"+average+"'" + "where admissionNo ='"+admissionNo+"'";
+				String sql = "update studentresult set(0,'"+studnetName+"', '"+admissionNo+"', '"+year+"', '"+classRoom+"','"+semester+"', '"+sinhlaMarks+"','"+buddhismMarks+"', '"+mathsMarks+"','"+scinceMarks+"','"+englishMarks+"','"+historyMarks+"','"+citizenEducationMarks+"','"+tamilMarks+"','"+geographyMarks+"','"+healthandphysicaleducationMarks+"','"+homeEconomicsMarks+"','"+aestheticsubjects+"','"+aestheticsubjectsMarks+"','"+totalMark+"','"+average+"')" + "where admissionNo ='"+admissionNo+"'";
 				
 				int rs = stmt.executeUpdate(sql);
 				
