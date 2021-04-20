@@ -26,10 +26,10 @@ public class ViewResultTeacherServlet extends HttpServlet {
 		
 		boolean isTrue;
 		
-		isTrue = ResultTeacherDBUtil.validate(admissionno, classroom, Semester);
+		isTrue = ResultDBUtil.validate(admissionno, classroom, Semester);
 		
 		if (isTrue == true) {
-			List<studentresult> sturDetails = ResultTeacherDBUtil.getstudentresult(admissionno);
+			List<studentresult> sturDetails = ResultDBUtil.getstudentresult(admissionno);
 			request.setAttribute("sturDetails", sturDetails);
 			
 			RequestDispatcher dis = request.getRequestDispatcher("Result_Sheet_Teacher.jsp");

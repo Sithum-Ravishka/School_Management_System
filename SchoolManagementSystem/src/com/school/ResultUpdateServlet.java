@@ -23,46 +23,44 @@ public class ResultUpdateServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		
-		String studentName = request.getParameter("StudentName");
-		String admissionNo = request.getParameter("AdmissionNo");
-		String year = request.getParameter("Year");
-		String classRoom = request.getParameter("classroom");
-		String semester = request.getParameter("Semester");
-		String sinhalaMarks = request.getParameter("SinhalaMarks");
-		String buddhismMarks = request.getParameter("BuddhismMarks");
-		String mathsMarks = request.getParameter("MathsMarks");
-		String scinceMarks = request.getParameter("ScinceMarks");
-		String englishMarks = request.getParameter("EnglishMarks");
-		String historyMarks = request.getParameter("HistoryMarks");
-		String citizenEducationMarks = request.getParameter("CitizenEducationMarks");
-		String tamilMarks = request.getParameter("TamilMarks");
-		String geographyMarks = request.getParameter("GeographyMarks");
-		String healthandphysicaleducationMarks = request.getParameter("HealthandphysicaleducationMarks");
-		String homeEconomicsMarks = request.getParameter("HomeEconomicsMarks");
-		String aestheticsubjects = request.getParameter("Aestheticsubjects");
-		String aestheticsubjectsMarks = request.getParameter("AestheticsubjectsMarks");
-		int totalMark = Integer.parseInt(request.getParameter("totalMark"));
-		double average = Double.parseDouble(request.getParameter("average"));
-
+		String studentName = request.getParameter("studentName");
+		String admissionNo = request.getParameter("admissionNo");
+		String year = request.getParameter("year");
+		String classRoom = request.getParameter("classRoom");
+		String semester = request.getParameter("semester");
+		String sinhalaMarks = request.getParameter("sinhalaMarks");
+		String buddhismMarks = request.getParameter("buddhismMarks");
+		String mathsMarks = request.getParameter("mathsMarks");
+		String scinceMarks = request.getParameter("scinceMarks");
+		String englishMarks = request.getParameter("englishMarks");
+		String historyMarks = request.getParameter("historyMarks");
+		String citizenEducationMarks = request.getParameter("citizenEducationMarks");
+		String tamilMarks = request.getParameter("tamilMarks");
+		String geographyMarks = request.getParameter("geographyMarks");
+		String healthandphysicaleducationMarks = request.getParameter("healthandphysicaleducationMarks");
+		String homeeconomicsMarks = request.getParameter("homeeconomicsMarks");
+		String aestheticSubjects = request.getParameter("aestheticSubjects");
+		String aestheticsubjectMarks = request.getParameter("aestheticsubjectMarks");
+		String totalMark = request.getParameter("totalMark");
+		String average = request.getParameter("average");
 		
 		boolean isTrue;
 
-		isTrue = ResultDBUtil.updatestudentresult(studentName,admissionNo,year,classRoom,semester,sinhalaMarks,buddhismMarks,mathsMarks,scinceMarks,
-				englishMarks,historyMarks,citizenEducationMarks,tamilMarks,geographyMarks,healthandphysicaleducationMarks,homeEconomicsMarks,aestheticsubjects,aestheticsubjectsMarks,totalMark,average);
+		isTrue = ResultDBUtil.updatestudentresult(studentName,admissionNo,year,classRoom,semester,sinhalaMarks,buddhismMarks,mathsMarks,scinceMarks,englishMarks,historyMarks,citizenEducationMarks,tamilMarks,geographyMarks,healthandphysicaleducationMarks,homeeconomicsMarks,aestheticSubjects,aestheticsubjectMarks,totalMark,average);
 		
 		if(isTrue == true) {
 			
 			List<studentresult> sturDetails = ResultDBUtil.getStudentResultDetails(admissionNo);
 			request.setAttribute("sturDetails", sturDetails);
 			
-			RequestDispatcher dis = request.getRequestDispatcher("R.jsp");
+			RequestDispatcher dis = request.getRequestDispatcher("Result_Sheet_Teacher.jsp");
 			dis.forward(request, response);
 		}else
 		{
 			List<studentresult> sturDetails = ResultDBUtil.getStudentResultDetails(admissionNo);
 			request.setAttribute("sturDetails", sturDetails);
 			
-			RequestDispatcher dis1 = request.getRequestDispatcher("unsuccess.jsp");
+			RequestDispatcher dis1 = request.getRequestDispatcher("Result_Sheet_Teacher.jsp");
 			dis1.forward(request, response);
 		}
 	}

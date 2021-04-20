@@ -11,6 +11,7 @@
 	<link rel = "stylesheet" type = "text/css" href = "CSS/Result_Sheet.css">
 
 
+
 </head>
 <body>
 <form id="form1" class="form1" name="form1" method="post">
@@ -19,27 +20,25 @@
 <c:forEach var="stu" items="${sturDetails}">
 
 				<c:set var="studentName" value="${stu.studentName}"/>
+				<c:set var="admissionNo" value ="${stu.admissionNo}"/>
+				<c:set var="year" value ="${stu.year}"/>
 				<c:set var="classRoom" value="${stu.classRoom}"/>
 				<c:set var="semester" value="${stu.semester}"/>
-				<c:set var = "admissionNo" value ="${stu.admissionNo}"/>
-				<c:set var = "year" value ="${stu.year}"/>
-				<c:set var = "sinhalaMarks" value ="${stu.sinhalaMarks}"/>
-				<c:set var = "buddhismMarks" value ="${stu.buddhismMarks}"/>
-				<c:set var = "mathsMarks" value ="${stu.mathsMarks}"/>
-				<c:set var = "scinceMarks" value ="${stu.scinceMarks}"/>
-				<c:set var = "englishMarks" value ="${stu.englishMarks}"/>
-				<c:set var = "historyMarks" value ="${stu.historyMarks}"/>
-				<c:set var = "citizenEducationMarks" value ="${stu.citizenEducationMarks}"/>
-				<c:set var = "tamilMarks" value ="${stu.tamilMarks}"/>
-				<c:set var = "geographyMarks" value ="${stu.geographyMarks}"/>
-				<c:set var = "healthandPhysicalEducationMarks" value ="${stu.healthandPhysicalEducationMarks}"/>
-				<c:set var = "homeEconomicsMarks" value ="${stu.homeEconomicsMarks}"/>
-				<c:set var = "aestheticSubjects" value ="${stu.aestheticSubjects}"/>
-				<c:set var = "aestheticsubjectMarks" value ="${stu.aestheticsubjectMarks}"/>
-				<c:set var = "totalMark" value ="${stu.totalMark}"/>
-				<c:set var = "average" value ="${stu.average}"/>
-
-
+				<c:set var="sinhalaMarks" value="${stu.sinhalaMarks}"/>
+				<c:set var="buddhismMarks" value="${stu.buddhismMarks}"/>
+				<c:set var="mathsMarks" value ="${stu.mathsMarks}"/>
+				<c:set var="scinceMarks" value="${stu.scinceMarks}"/>
+				<c:set var="englishMarks" value="${stu.englishMarks}"/>
+				<c:set var="historyMarks" value="${stu.historyMarks}"/>
+				<c:set var="citizenEducationMarks" value="${stu.citizenEducationMarks}"/>
+				<c:set var="tamilMarks" value="${stu.tamilMarks}"/>
+				<c:set var="geographyMarks" value="${stu.geographyMarks}"/>
+				<c:set var="healthandphysicaleducationMarks" value="${stu.healthandphysicaleducationMarks}"/>
+				<c:set var="homeeconomicsMarks" value ="${stu.homeeconomicsMarks}"/>
+				<c:set var="aestheticSubjects" value="${stu.aestheticSubjects}"/>
+				<c:set var="aestheticsubjectMarks" value="${stu.aestheticsubjectMarks}"/>
+				<c:set var="totalMark" value="${stu.totalMark}"/>
+				<c:set var="average" value="${stu.average}"/>
 
 		<table width="28" border="0" align="right">
 				<tbody>
@@ -122,11 +121,11 @@
 						</tr>
 						<tr>
 								<td align="center">Health & physical education</td>
-								<td align="center">${stu.healthandPhysicalEducationMarks}</td>
+								<td align="center">${stu.healthandphysicaleducationMarks}</td>
 						</tr>
 						<tr>
 								<td align="center">Home Economics</td>
-								<td align="center">${stu.homeEconomicsMarks}</td>
+								<td align="center">${stu.homeeconomicsMarks}</td>
 						</tr>
 						<tr>
 								<td align="center">${stu.aestheticSubjects}</td>
@@ -145,75 +144,43 @@
 		<p>&nbsp;</p>
 		<table width="176" border="0" align="right">
 				<tbody>
-				
-				<c:url value="Result_Update.jsp" var="stuupdate">
-			
-				<c:param name="studentName" value="${stu.studentName}"/>
-				<c:param name="classRoom" value="${stu.classRoom}"/>
-				<c:param name="semester" value="${stu.semester}"/>
-				<c:param name="admissionNo" value ="${stu.admissionNo}"/>
-				<c:param name="year" value ="${stu.year}"/>
-				<c:param name="sinhalaMarks" value ="${stu.sinhalaMarks}"/>
-				<c:param name="buddhismMarks" value ="${stu.buddhismMarks}"/>
-				<c:param name="mathsMarks" value ="${stu.mathsMarks}"/>
-				<c:param name="scinceMarks" value ="${stu.scinceMarks}"/>
-				<c:param name="englishMarks" value ="${stu.englishMarks}"/>
-				<c:param name="historyMarks" value ="${stu.historyMarks}"/>
-				<c:param name="citizenEducationMarks" value ="${stu.citizenEducationMarks}"/>
-				<c:param name="tamilMarks" value ="${stu.tamilMarks}"/>
-				<c:param name="geographyMarks" value ="${stu.geographyMarks}"/>
-				<c:param name="healthandPhysicalEducationMarks" value ="${stu.healthandPhysicalEducationMarks}"/>
-				<c:param name="homeEconomicsMarks" value ="${stu.homeEconomicsMarks}"/>
-				<c:param name="aestheticSubjects" value ="${stu.aestheticSubjects}"/>
-				<c:param name="aestheticsubjectMarks" value ="${stu.aestheticsubjectMarks}"/>
-				<c:param name="totalMark" value ="${stu.totalMark}"/>
-				<c:param name="average" value ="${stu.average}"/>
-
-			</c:url>
-			
-			<table><tr>
-			<td>
-			<div class="bt">
-			<a href ="${stuupdate}">
-			<input type ="button" name="update" value="UpdateData" class="btn">
-			</a>
-			</div>
-			</td>
-			
-			
-				<td>			
-				<c:url value="deletepassenger.jsp" var="passDelete">
-				
-				<c:param name="studentName" value ="${stu.studentName}"/>
-				<c:param name="classRoom" value ="${stu.classRoom}"/>
-				<c:param name="semester" value ="${stu.semester}"/>
-				<c:param name="admissionNo" value ="${stu.admissionNo}"/>
-				<c:param name="year" value ="${stu.year}"/>
-				<c:param name="sinhalaMarks" value ="${stu.sinhalaMarks}"/>
-				<c:param name="buddhismMarks" value ="${stu.buddhismMarks}"/>
-				<c:param name="mathsMarks" value ="${stu.mathsMarks}"/>
-				<c:param name="scinceMarks" value ="${stu.scinceMarks}"/>
-				<c:param name="englishMarks" value ="${stu.englishMarks}"/>
-				<c:param name="historyMarks" value ="${stu.historyMarks}"/>
-				<c:param name="citizenEducationMarks" value ="${stu.citizenEducationMarks}"/>
-				<c:param name="tamilMarks" value ="${stu.tamilMarks}"/>
-				<c:param name="geographyMarks" value ="${stu.geographyMarks}"/>
-				<c:param name="healthandPhysicalEducationMarks" value ="${stu.healthandPhysicalEducationMarks}"/>
-				<c:param name="homeEconomicsMarks" value ="${stu.homeEconomicsMarks}"/>
-				<c:param name="aestheticSubjects" value ="${stu.aestheticSubjects}"/>
-				<c:param name="aestheticsubjectMarks" value ="${stu.aestheticsubjectMarks}"/>
-				<c:param name="totalMark" value ="${stu.totalMark}"/>
-				<c:param name="average" value ="${stu.average}"/>
-				
-				</c:url>
-					<div class="dbt">
-					<a href ="${passDelete}"> 
-					<input type ="button" name="delete" value="Delete Profile" class="btnd">
-					</a>
-					</div>
+						<tr align="right">
+								<td width="170"><input name="Re-Check Request" type="button" class="ButtonC" id="Re-Check Request" value="Re-Check Request"></td>
+						</tr>
 				</tbody>
 		</table>
-	 </c:forEach>
-</form>
+			</c:forEach>
+			</form>
+			<c:url value="Result_Update.jsp" var="stuupdate">
+			
+				<c:param name="studentName" value="${studentName}"/>
+				<c:param name="admissionNo" value ="${admissionNo}"/>
+				<c:param name="year" value="${year}"/>
+				<c:param name="classRoom" value="${classRoom}"/>
+				<c:param name="semester" value="${semester}"/>
+				<c:param name="sinhalaMarks" value="${sinhalaMarks}"/>
+				<c:param name="buddhismMarks" value="${buddhismMarks}"/>
+				<c:param name="mathsMarks" value="${mathsMarks}"/>
+				<c:param name="scinceMarks" value="${scinceMarks}"/>
+				<c:param name="englishMarks" value="${englishMarks}"/>
+				<c:param name="historyMarks" value="${historyMarks}"/>
+				<c:param name="citizenEducationMarks" value="${citizenEducationMarks}"/>
+				<c:param name="tamilMarks" value="${tamilMarks}"/>
+				<c:param name="geographyMarks" value="${geographyMarks}"/>
+				<c:param name="healthandphysicaleducationMarks" value="${healthandphysicaleducationMarks}"/>
+				<c:param name="homeeconomicsMarks" value="${homeeconomicsMarks}"/>
+				<c:param name="aestheticSubjects" value="${aestheticSubjects}"/>
+				<c:param name="aestheticsubjectMarks" value="${aestheticsubjectMarks}"/>
+				<c:param name="totalMark" value="${totalMark}"/>
+				<c:param name="average" value="${average}"/>
+
+			</c:url>
+
+
+			<a href="${stuupdate}">
+			<input type ="button" name="update" value="UpdateData">
+			</a>
+
 </body>
 </html>
+

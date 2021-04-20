@@ -34,8 +34,8 @@ public class Result_Insert extends HttpServlet {
 		String homeEconomicsMarks = request.getParameter("HomeEconomicsMarks");
 		String aestheticsubjects = request.getParameter("Aestheticsubjects");
 		String aestheticsubjectsMarks = request.getParameter("AestheticsubjectsMarks");
-		int totalMark = Integer.parseInt(request.getParameter("totalMark"));
-		double average = Double.parseDouble(request.getParameter("average"));
+		String totalMark = request.getParameter("totalMark");
+		String average = request.getParameter("average");
 		
 		
 		boolean isTrue;

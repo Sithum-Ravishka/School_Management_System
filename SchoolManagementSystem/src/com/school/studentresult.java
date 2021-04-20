@@ -2,7 +2,6 @@ package com.school;
 
 public class studentresult {
 	
-	private int id;
 	private String studentName;
 	private String admissionNo;
 	private String year;
@@ -17,18 +16,17 @@ public class studentresult {
 	private String citizenEducationMarks;
 	private String tamilMarks;
 	private String geographyMarks;
-	private String healthandPhysicalEducationMarks;
-	private String homeEconomicsMarks;
+	private String healthandphysicaleducationMarks;
+	private String homeeconomicsMarks;
 	private String aestheticSubjects;
 	private String aestheticsubjectMarks;
-	private int totalMark;
-	private double average;
-	public studentresult(int id, String studentName, String admissionNo, String year, String classRoom, String semester,
+	private String totalMark;
+	private String average;
+	public studentresult(String studentName, String admissionNo, String year, String classRoom, String semester,
 			String sinhalaMarks, String buddhismMarks, String mathsMarks, String scinceMarks, String englishMarks,
 			String historyMarks, String citizenEducationMarks, String tamilMarks, String geographyMarks,
-			String healthandPhysicalEducationMarks, String homeEconomicsMarks, String aestheticSubjects,
-			String aestheticsubjectMarks, int totalMark, double average) {
-		this.id = id;
+			String healthandphysicaleducationMarks, String homeeconomicsMarks, String aestheticSubjects,
+			String aestheticsubjectMarks, String totalMark, String average) {
 		this.studentName = studentName;
 		this.admissionNo = admissionNo;
 		this.year = year;
@@ -43,15 +41,12 @@ public class studentresult {
 		this.citizenEducationMarks = citizenEducationMarks;
 		this.tamilMarks = tamilMarks;
 		this.geographyMarks = geographyMarks;
-		this.healthandPhysicalEducationMarks = healthandPhysicalEducationMarks;
-		this.homeEconomicsMarks = homeEconomicsMarks;
+		this.healthandphysicaleducationMarks = healthandphysicaleducationMarks;
+		this.homeeconomicsMarks = homeeconomicsMarks;
 		this.aestheticSubjects = aestheticSubjects;
 		this.aestheticsubjectMarks = aestheticsubjectMarks;
 		this.totalMark = totalMark;
 		this.average = average;
-	}
-	public int getId() {
-		return id;
 	}
 	public String getStudentName() {
 		return studentName;
@@ -95,11 +90,11 @@ public class studentresult {
 	public String getGeographyMarks() {
 		return geographyMarks;
 	}
-	public String getHealthandPhysicalEducationMarks() {
-		return healthandPhysicalEducationMarks;
+	public String getHealthandphysicaleducationMarks() {
+		return healthandphysicaleducationMarks;
 	}
-	public String getHomeEconomicsMarks() {
-		return homeEconomicsMarks;
+	public String getHomeeconomicsMarks() {
+		return homeeconomicsMarks;
 	}
 	public String getAestheticSubjects() {
 		return aestheticSubjects;
@@ -107,10 +102,10 @@ public class studentresult {
 	public String getAestheticsubjectMarks() {
 		return aestheticsubjectMarks;
 	}
-	public int getTotalMark() {
+	public String getTotalMark() {
 		return totalMark;
 	}
-	public double getAverage() {
+	public String getAverage() {
 		return average;
 	}
 
