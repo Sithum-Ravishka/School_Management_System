@@ -99,11 +99,11 @@
 						</tr>
 						<tr>
 								<td align="center">Health & physical education</td>
-								<td align="center">${stu.healthandPhysicalEducationMarks}</td>
+								<td align="center">${stu.healthandphysicaleducationMarks}</td>
 						</tr>
 						<tr>
 								<td align="center">Home Economics</td>
-								<td align="center">${stu.homeEconomicsMarks}</td>
+								<td align="center">${stu.homeeconomicsMarks}</td>
 						</tr>
 						<tr>
 								<td align="center">${stu.aestheticSubjects}</td>

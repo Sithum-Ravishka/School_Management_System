@@ -1,5 +1,6 @@
 @charset "ISO-8859-1";
 
+
 .form-input {
     font-size: 17px;
     box-sizing: border-box;
@@ -16,6 +17,9 @@
 }
 
 .form1 {
+  background-image: url(../Image/1234.jpg);
+  background-repeat: no-repeat;
+  background-size: 1300px 850px;
   font-family: "Roboto", sans-serif;
   width:1200px;
   margin: auto;

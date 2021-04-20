@@ -40,13 +40,7 @@
 				<c:set var="totalMark" value="${stu.totalMark}"/>
 				<c:set var="average" value="${stu.average}"/>
 
-		<table width="28" border="0" align="right">
-				<tbody>
-						<tr>
-								<td width="22" align="right" bgcolor="#FFFFFF"><input name="imageField" type="image" id="imageField" src="Image/Print.png" width="25" height="25"></td>
-						</tr>
-				</tbody>
-		</table>
+
 		<p>&nbsp;</p>
 		<table width="401" border="0" align="center">
 				<tbody>
@@ -141,16 +135,9 @@
 						</tr>
 				</tbody>
 		</table>
-		<p>&nbsp;</p>
-		<table width="176" border="0" align="right">
-				<tbody>
-						<tr align="right">
-								<td width="170"><input name="Re-Check Request" type="button" class="ButtonC" id="Re-Check Request" value="Re-Check Request"></td>
-						</tr>
-				</tbody>
-		</table>
+	
 			</c:forEach>
-			</form>
+			
 			<c:url value="Result_Update.jsp" var="stuupdate">
 			
 				<c:param name="studentName" value="${studentName}"/>
@@ -175,12 +162,56 @@
 				<c:param name="average" value="${average}"/>
 
 			</c:url>
+			<p>&nbsp;</p>
+			<table width="176" border="0" align="center">
+				<tbody>
+						<tr align="right">
+								<td width="170" align="center"><a href="${stuupdate}">
+										<input type ="button" name="update" class="ButtonC" value="UpdateResult">
+								</a></td>
+								
+						</tr>
+				</tbody>
+		</table>
+		
+		<c:url value="Delete_Result.jsp" var="studelete">
+			
+				<c:param name="studentName" value="${studentName}"/>
+				<c:param name="admissionNo" value ="${admissionNo}"/>
+				<c:param name="year" value="${year}"/>
+				<c:param name="classRoom" value="${classRoom}"/>
+				<c:param name="semester" value="${semester}"/>
+				<c:param name="sinhalaMarks" value="${sinhalaMarks}"/>
+				<c:param name="buddhismMarks" value="${buddhismMarks}"/>
+				<c:param name="mathsMarks" value="${mathsMarks}"/>
+				<c:param name="scinceMarks" value="${scinceMarks}"/>
+				<c:param name="englishMarks" value="${englishMarks}"/>
+				<c:param name="historyMarks" value="${historyMarks}"/>
+				<c:param name="citizenEducationMarks" value="${citizenEducationMarks}"/>
+				<c:param name="tamilMarks" value="${tamilMarks}"/>
+				<c:param name="geographyMarks" value="${geographyMarks}"/>
+				<c:param name="healthandphysicaleducationMarks" value="${healthandphysicaleducationMarks}"/>
+				<c:param name="homeeconomicsMarks" value="${homeeconomicsMarks}"/>
+				<c:param name="aestheticSubjects" value="${aestheticSubjects}"/>
+				<c:param name="aestheticsubjectMarks" value="${aestheticsubjectMarks}"/>
+				<c:param name="totalMark" value="${totalMark}"/>
+				<c:param name="average" value="${average}"/>
 
-
-			<a href="${stuupdate}">
-			<input type ="button" name="update" value="UpdateData">
-			</a>
-
+			</c:url>
+			<p>&nbsp;</p>
+			<table width="176" border="0" align="center">
+				<tbody>
+						<tr align="right">
+								<td width="170" align="center"><a href="${studelete}">
+										<input type ="button" name="delete" class="ButtonC" value="DeleteResult">
+								</a></td>
+								
+						</tr>
+				</tbody>
+		</table>
+		
+		<p>&nbsp;</p>
+</form>
 </body>
 </html>
 

@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,23 +33,23 @@
 		String average = request.getParameter("average");
 %>
 		
-<form action="update" id="form1" name="form1" method="post">
+<form action="delete" id="form1" name="form1" method="post">
 		<center><p class="nam"> Insert Exam Results Of Student</p></center>
 		<table width="1095" border="0" align="center" cellpadding="0" cellspacing="10">
 				<tbody>
 						<tr>
-								<td width="360">  <input type="text" name="studentName" value="<%= studentName %>" required="required" class="form-input"></td>
-								<td width="360"><input type="text" name="admissionNo" value="<%= admissionNo %>" required="required" class="form-input" ></td>
-								<td width="360"><input type="number" name="year" value="<%= year %>" required="required" class="form-input" max="2020" min="2002"></td>
+								<td width="360">  <input type="text" name="studentName" value="<%= studentName %>" readonly="readonly" required="required" class="form-input"></td>
+								<td width="360"><input type="text" name="admissionNo" value="<%= admissionNo %>" readonly="readonly" required="required" class="form-input" ></td>
+								<td width="360"><input type="number" name="year" value="<%= year %>" required="required" readonly="readonly" class="form-input" max="2020" min="2002"></td>
 						</tr>
 						<tr>
-								<td><select name="classRoom"  required="required" class="form-input">
+								<td><select name="classRoom"  required="required" readonly="readonly" class="form-input">
 										<option ><%= classRoom %></option>
 										<option value="6A">6A</option>
 										<option value="6B">6B</option>
 								</select></td>
 								<td>&nbsp;</td>
-								<td><select name="semester"  required="required" class="form-input">
+								<td><select name="semester"  required="required" readonly="readonly" class="form-input">
 										<option ><%= semester %></option>
 										<option value="1st Semester">1st Semester</option>
 										<option value="2st Semester">2st Semester</option>
@@ -72,56 +71,56 @@
 						</tr>
 						<tr>
 								<td align="center">Sinhala</td>
-								<td align="center"><input name="sinhalaMarks" value="<%= sinhalaMarks %>" type="number" step="any" class="marks-input" id="SinhalaMarks" required="required"  max="100" min="0" autocomplete="off"></td>
+								<td align="center"><input name="sinhalaMarks" value="<%= sinhalaMarks %>" type="number" step="any" class="marks-input" readonly="readonly" id="SinhalaMarks" required="required"  max="100" min="0" autocomplete="off"></td>
 						</tr>
 						<tr>
 								<td align="center">Buddhism</td>
-								<td align="center"><input name="buddhismMarks" value="<%= buddhismMarks %>" type="number" class="marks-input" id="BuddhismMarks" required="required"  max="100" min="0" autocomplete="off"></td>
+								<td align="center"><input name="buddhismMarks" value="<%= buddhismMarks %>" type="number" class="marks-input" readonly="readonly" id="BuddhismMarks" required="required"  max="100" min="0" autocomplete="off"></td>
 						</tr>
 						<tr>
 								<td align="center">Maths</td>
-								<td align="center"><input name="mathsMarks" value="<%= mathsMarks %>" type="number" class="marks-input" id="MathsMarks" required="required"  max="100" min="0" autocomplete="off"></td>
+								<td align="center"><input name="mathsMarks" value="<%= mathsMarks %>" type="number" class="marks-input" readonly="readonly" id="MathsMarks" required="required"  max="100" min="0" autocomplete="off"></td>
 						</tr>
 						<tr>
 								<td align="center">Scince</td>
-								<td align="center"><input name="scinceMarks" value="<%= scinceMarks %>" type="number" class="marks-input" id="ScinceMarks" required="required"  max="100" min="0" autocomplete="off"></td>
+								<td align="center"><input name="scinceMarks" value="<%= scinceMarks %>" type="number" class="marks-input" readonly="readonly" id="ScinceMarks" required="required"  max="100" min="0" autocomplete="off"></td>
 						</tr>
 						<tr>
 								<td align="center">English</td>
-								<td align="center"><input name="englishMarks" value="<%= englishMarks %>" type="number" class="marks-input" id="EnglishMarks" required="required"  max="100" min="0" ></td>
+								<td align="center"><input name="englishMarks" value="<%= englishMarks %>" type="number" class="marks-input" readonly="readonly" id="EnglishMarks" required="required"  max="100" min="0" ></td>
 						</tr>
 						<tr>
 								<td align="center">History</td>
-								<td align="center"><input name="historyMarks" value="<%= historyMarks %>" type="number" class="marks-input" id="HistoryMarks" required="required"  max="100" min="0" ></td>
+								<td align="center"><input name="historyMarks" value="<%= historyMarks %>" type="number" class="marks-input" readonly="readonly" id="HistoryMarks" required="required"  max="100" min="0" ></td>
 						</tr>
 						<tr>
 								<td align="center">Citizen Education</td>
-								<td align="center"><input name="citizenEducationMarks" value="<%= citizenEducationMarks %>" type="number" id="CitizenEducationMarks" class="marks-input" required="required" max="100" min="0" ></td>
+								<td align="center"><input name="citizenEducationMarks" value="<%= citizenEducationMarks %>" type="number" readonly="readonly" id="CitizenEducationMarks" class="marks-input" required="required" max="100" min="0" ></td>
 						</tr>
 						<tr>
 								<td align="center">Tamil</td>
-								<td align="center"><input name="tamilMarks" value="<%= tamilMarks %>" type="number" class="marks-input" id="TamilMarks" required="required" max="100" min="0" autocomplete="off"></td>
+								<td align="center"><input name="tamilMarks" value="<%= tamilMarks %>" type="number" class="marks-input" id="TamilMarks" readonly="readonly" required="required" max="100" min="0" autocomplete="off"></td>
 						</tr>
 						<tr>
 								<td align="center">Geography</td>
-								<td align="center"><input name="geographyMarks" value="<%= geographyMarks %>" type="number" class="marks-input" id="GeographyMarks" required="required" max="100" min="0" autocomplete="off"></td>
+								<td align="center"><input name="geographyMarks" value="<%= geographyMarks %>" type="number" class="marks-input" id="GeographyMarks" readonly="readonly" required="required" max="100" min="0" autocomplete="off"></td>
 						</tr>
 						<tr>
 								<td align="center">Health and physical education</td>
-								<td align="center"><input name="healthandphysicaleducationMarks" value="<%= healthandphysicaleducationMarks %>" type="number" id="HealthandphysicaleducationMarks" class="marks-input" required="required" max="100" min="0" autocomplete="off"></td>
+								<td align="center"><input name="healthandphysicaleducationMarks" value="<%= healthandphysicaleducationMarks %>" type="number" readonly="readonly" id="HealthandphysicaleducationMarks" class="marks-input" required="required" max="100" min="0" autocomplete="off"></td>
 						</tr>
 						<tr>
 								<td align="center">Home Economics</td>
-								<td align="center"><input name="homeeconomicsMarks" value="<%= homeeconomicsMarks %>" type="number" id="HomeEconomicsMarks" class="marks-input" required="required"  max="100" min="0" autocomplete="off"></td>
+								<td align="center"><input name="homeeconomicsMarks" value="<%= homeeconomicsMarks %>" type="number" id="HomeEconomicsMarks" class="marks-input" required="required" readonly="readonly"  max="100" min="0" autocomplete="off"></td>
 						</tr>
 						<tr>
-								<td align="center"><select name="aestheticSubjects" id="Aestheticsubjects" class="form-input1" required="required" >
+								<td align="center"><select name="aestheticSubjects" id="Aestheticsubjects" class="form-input1" required="required" readonly="readonly">
 										<option><%= aestheticSubjects %></option>
 										<option value="Art">Art</option>
 										<option value="Dance">Dance</option>
 										<option value="Music">Music</option>
 								</select></td>
-								<td align="center"><input name="aestheticsubjectMarks" value="<%= aestheticsubjectMarks %>" type="number" id="AestheticsubjectsMarks" class="marks-input" required="required" max="100" min="0" autocomplete="off"></td>
+								<td align="center"><input name="aestheticsubjectMarks" value="<%= aestheticsubjectMarks %>" type="number" id="AestheticsubjectsMarks" class="marks-input" readonly="readonly" required="required" max="100" min="0" autocomplete="off"></td>
 						</tr>
 						<tr>
 								<td align="center">Total Mark</td>
@@ -132,24 +131,15 @@
 								<td align="center"><input name="average" value="<%= average %>" type="text" id="average" required="required" class="marks-input" step="0.01" pattern="^\d+(?:\.\d{1,2})?$" readonly="readonly"/></td>
 						</tr>
 				</tbody>
-		</table>
-		<table width="260" border="0" align="center">
+				<table width="420" border="0" align="center">
 				<tbody>
 						<tr>
-								<td width="254" height="84" align="center"><input name="Sumbit" type="button" class="ButtonC" onClick="javascript:addNumbers()" value="Calculate"/></td>
-						</tr>
-				</tbody>
-		</table>
-		<table width="420" border="0" align="center">
-				<tbody>
-						<tr>
-								<td width="140" align="center"><input type="submit" class="ButtonC" name="submit" value="Update My Data"></td>
-								<td width="170" align="center"><a href ="useraccount.jsp"><input type="button" name="button" class="ButtonC" id="button" value="Back"></a></td>
+								<td width="140" align="center"><input type="submit" class="ButtonS" name="submit" value="Delete Account"></td>
+								<td width="170" align="center"><a href ="Result_Sheet_Teacher.jsp"><input type="button" name="button" class="ButtonC" id="button" value="Back"></a></td>
 						</tr>
 				</tbody>
 		</table>
 		<p>&nbsp;</p>
 </form>
 </body>
-<script src="JS/Result_Insert.js"></script>
 </html>

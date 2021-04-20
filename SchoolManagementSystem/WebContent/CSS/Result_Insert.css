@@ -98,6 +98,24 @@
   color:white;
 }
 
+.ButtonD {
+   display:inline-block;
+   padding:10px 20px;
+   background-color: #FF0004;
+   font-size:17px;
+   border:none;
+   border-radius:5px;
+   color:#FFFFFF;
+   cursor:pointer;
+   width:100%;
+}
+
+.ButtonD:hover {
+  background-color: #FF5456;
+  color:white;
+}
+
+
 .nam
 {
 	font-size:25px;

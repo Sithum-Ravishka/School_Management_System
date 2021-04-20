@@ -27,6 +27,7 @@
 								<td width="300" align="center"><select id="classRoom" name="classRoom"  required="required" class="form-input1">
 										<option selected hidden value="">Select (Class)</option>
 										<option value="6A">6A</option>
+										<option value="6B">6B</option>
 								</select></td>
 								<td width="300" align="center"><select id="semester" name="semester" required="required" class="form-input1">
 										<option selected hidden value="">Select (Semester)</option>

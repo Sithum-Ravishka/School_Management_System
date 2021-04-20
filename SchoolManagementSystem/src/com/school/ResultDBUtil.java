@@ -186,6 +186,33 @@ try {
 return studentResult;
 }
 
-
+public static boolean deleteResult(String admissionNo) {
+	
+	int convertadmissionNo = Integer.parseInt(admissionNo);
+	
+			
+			try {
+				
+				con = DBConnect.getConnection();
+				stmt = con.createStatement();
+				
+				String sql ="delete from studentresult where admissionNo = '"+convertadmissionNo+"'";
+				int sr = stmt.executeUpdate(sql);
+				
+				if(sr > 0) {
+					isSuccess = true;
+				}else
+				{
+					isSuccess = false;
+				}
+				
+				
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			
+	
+	return isSuccess;
+}
 
 }
