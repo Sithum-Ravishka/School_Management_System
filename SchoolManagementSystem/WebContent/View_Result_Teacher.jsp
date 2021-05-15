@@ -4,18 +4,24 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Term Test Marks</title>
+<title>Student Term Test Marks</title>
 
 	<link rel = "stylesheet" type = "text/css" href = "CSS/View_Result.css">
 
 </head>
 <body>
+<div class="img">
 <form action="viewTeacher" class="form1" method="post">
 		<p>&nbsp;</p>
-		<table width="400" border="0" align="center">
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+	<div class="img1">
+		<table width="559" border="0" align="center">
 				<tbody>
 						<tr>
-								<td width="394" height="41" align="center"><label><span class="nam">Term Exam Marks&nbsp;</span><br>
+								<td width="553" height="41" align="center"><label><span class="nam">Student Term Exam Marks</span><br>
 								</label></td>
 						</tr>
 				</tbody>
@@ -23,7 +29,7 @@
 		<table width="900" border="0" align="center">
 				<tbody>
 						<tr>
-								<td width="286" height="57" align="center"><input type="number" id="admissionNo" name="admissionNo" required="required" class="form-input1" placeholder="Admission No*"></td>
+								<td width="286" height="57" align="center"><input type="number" id="admissionNo" name="admissionNo" required="required" class="form-input1" placeholder="Student Admission No*"></td>
 								<td width="300" align="center"><select id="classRoom" name="classRoom"  required="required" class="form-input1">
 										<option selected hidden value="">Select (Class)</option>
 										<option value="6A">6A</option>
@@ -45,7 +51,8 @@
 						</tr>
 				</tbody>
 		</table>
-		<p>&nbsp;</p>
+		</div>
 </form>
+</div>
 </body>
 </html>

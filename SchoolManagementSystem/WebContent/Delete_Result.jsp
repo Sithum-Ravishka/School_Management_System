@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Result Insert</title>
 
-	<link rel = "stylesheet" type = "text/css" href = "CSS/Result_Insert.css">
+	<link rel = "stylesheet" type = "text/css" href = "CSS/Result_Delete.css">
 
 </head>
 <body>

@@ -8,7 +8,7 @@
 <meta charset="ISO-8859-1">
 <title>Result Sheet</title>
 
-	<link rel = "stylesheet" type = "text/css" href = "CSS/Result_Sheet.css">
+	<link rel = "stylesheet" type = "text/css" href = "CSS/Result_Sheet_Tec.css">
 
 
 

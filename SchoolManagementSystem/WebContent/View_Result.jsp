@@ -7,15 +7,21 @@
 <title>Term Test Marks</title>
 
 	<link rel = "stylesheet" type = "text/css" href = "CSS/View_Result.css">
-
+	<link href="../New folder (4)/aaa.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<form action="view" class="form1" method="post">
+<div class="img">
+<form action="view" class="form1" name="form1" method="post">
 		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+	<div class="img1">
 		<table width="400" border="0" align="center">
 				<tbody>
 						<tr>
-								<td width="394" height="41" align="center"><label><span class="nam">Term Exam Marks&nbsp;</span><br>
+								<td width="394" height="41" align="center"><label><span class="nam">Term Exam Marks</span><br>
 								</label></td>
 						</tr>
 				</tbody>
@@ -27,6 +33,7 @@
 								<td width="300" align="center"><select id="classRoom" name="classRoom"  required="required" class="form-input1">
 										<option selected hidden value="">Select (Class)</option>
 										<option value="6A">6A</option>
+										<option value="6B">6B</option>
 								</select></td>
 								<td width="300" align="center"><select id="semester" name="semester" required="required" class="form-input1">
 										<option selected hidden value="">Select (Semester)</option>
@@ -44,7 +51,8 @@
 						</tr>
 				</tbody>
 		</table>
-		<p>&nbsp;</p>
+	</div>
 </form>
+</div>
 </body>
 </html>

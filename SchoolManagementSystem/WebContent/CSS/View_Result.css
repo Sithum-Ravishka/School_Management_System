@@ -1,5 +1,14 @@
 @charset "ISO-8859-1";
 
+.img {
+	background-image: url(../Image/1234.jpg);
+	background-repeat: none;
+	background-size: 900px 730px;
+    width:1500px;
+    height:730px;
+	
+}
+
 .form-input {
     font-size: 17px;
     box-sizing: border-box;
@@ -24,7 +33,7 @@
     padding-right: 10px;
     color: #333333;
     text-align: center;
-    border: 1px solid #d6d6d6;
+    border: 1px solid #000000;
     border-radius: 4px;
     background: white;
     outline: none;
@@ -34,7 +43,7 @@
 .ButtonC {
    display:inline-block;
    padding:10px 20px;
-   background-color: #A04ED7;
+   background-color: #0086ff;
    font-size:17px;
    border:none;
    border-radius:5px;
@@ -43,7 +52,7 @@
 }
 
 .ButtonC:hover {
-  background-color: #8D26FE;
+  background-color: #2461ff;
   color:white;
 }
 
@@ -53,16 +62,23 @@
 	font-weight: bold;
 	word-spacing: 12px;
 	letter-spacing: 6px;
-	color: #FFFFFF;
+	color: #1f1f1f;
 	
 }
 
 .form1 {
   font-family: "Roboto", sans-serif;
+
+}
+
+.img1 {
+  font-family: "Roboto", sans-serif;
   width:1000px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin: auto;
   height: auto;
   border-radius: 10px;
-  background-color:black;
-  opacity: 0.9;
+  background-color:white;
+  opacity:0.8;
 }

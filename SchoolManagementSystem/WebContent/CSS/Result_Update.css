@@ -16,9 +16,9 @@ body {
     height: 34px;
     padding-left: 10px;
     padding-right: 10px;
-    color: #000000;
+    color: #333333;
     text-align: left;
-    border: 1px solid #000000;
+    border: 1px solid #d6d6d6;
     border-radius: 4px;
     background: white;
     outline: none;
@@ -31,9 +31,9 @@ body {
     height: 34px;
     padding-left: 10px;
     padding-right: 10px;
-    color: #000000;
+    color: #333333;
     text-align: center;
-    border: 1px solid #000000;
+    border: 1px solid #d6d6d6;
     border-radius: 4px;
     background: white;
     outline: none;
@@ -46,9 +46,9 @@ body {
     height: 34px;
     padding-left: 10px;
     padding-right: 10px;
-    color: #000000;
+    color: #333333;
     text-align: center;
-    border: 1px solid #000000;
+    border: 1px solid #d6d6d6;
     border-radius: 4px;
     background: white;
     outline: none;
@@ -58,52 +58,52 @@ body {
 .ButtonC {
    display:inline-block;
    padding:10px 20px;
-   background-color:  #0080ff;
+   background-color: #0099ff;
    font-size:17px;
    border:none;
    border-radius:5px;
-   color:#ffffff;
+   color:#bcf5e7;
    cursor:pointer;
 	width:100%;
 	height:40px;
 }
 
 .ButtonC:hover {
-  background-color: #016cfe;
+  background-color: #ff3300;
   color:white;
 }
 
 .ButtonR {
    display:inline-block;
    padding:10px 20px;
-   background-color: #fc7303;
+   background-color: #ff6600;
    font-size:17px;
    border:none;
    border-radius:5px;
-   color:#ffffff;
+   color:#bcf5e7;
    cursor:pointer;
 	width: 100%;
 }
 
 .ButtonR:hover {
-  background-color: #fd860f;
+  background-color: #007acc;
   color:white;
 }
 
 .ButtonS {
    display:inline-block;
    padding:10px 20px;
-   background-color: #0080ff;
+   background-color: #ff6600;
    font-size:17px;
    border:none;
    border-radius:5px;
-   color:#ffffff;
+   color:#bcf5e7;
    cursor:pointer;
    width:100%;
 }
 
 .ButtonS:hover {
-  background-color: #016cfe;
+  background-color: #ff3300;
   color:white;
 }
 

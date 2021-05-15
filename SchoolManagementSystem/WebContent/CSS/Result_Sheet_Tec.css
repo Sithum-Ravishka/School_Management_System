@@ -1,13 +1,5 @@
 @charset "ISO-8859-1";
 
-body {
-	background-image: url(../Image/1234.jpg);
-	background-repeat: none;
-	background-size: 900px 1100px;
-    width:auto;
-    height:auto;
-	
-}
 
 .form-input {
     font-size: 17px;
@@ -24,16 +16,17 @@ body {
     outline: none;
 }
 
-.form1{
+.form1 {
+  background-image: url(../Image/1234.jpg);
+  background-repeat: no-repeat;
+  background-size: 1300px 850px;
   font-family: "Roboto", sans-serif;
-  width:1300px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width:1200px;
   margin: auto;
-  height: 700px;
+  height: auto;
   border-radius: 10px;
-  background-color:white;
-  opacity:0.9;
+  background-color:#C8C8C8;
+  opacity: 0.9;
 }
 
 .ButtonR {
@@ -117,4 +110,3 @@ body {
 	font-family:"Roboto", sans-serif;
 	
 }
-

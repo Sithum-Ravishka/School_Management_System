@@ -5,13 +5,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Result Insert</title>
+<title>Student Exam Result Insert</title>
 
 	<link rel = "stylesheet" type = "text/css" href = "CSS/Result_Insert.css">
 
 </head>
 <body>
-<form action="reinsert" id="form1" name="form1" method="post">
+<div class="img">
+<form action="reinsert" class="form1" id="form1" name="form1" method="post">
 		<center><p class="nam"> Insert Exam Results Of Student</p></center>
 		<table width="1095" border="0" align="center" cellpadding="0" cellspacing="10">
 				<tbody>
@@ -24,6 +25,7 @@
 								<td><select name="classroom" required="required" class="form-input" id="classroom">
 										<option selected hidden value="">Select (Class)</option>
 										<option value="6A">6A</option>
+										<option value="6B">6B</option>
 								</select></td>
 								<td>&nbsp;</td>
 								<td><select name="Semester" required="required" class="form-input" id="Semester">
@@ -120,12 +122,13 @@
 				<tbody>
 						<tr>
 								<td width="140" align="center"><button type="reset" class="ButtonR" name="reset" id="reset" value="Reset">Reset</button></td>
-								<td width="140" align="center"><button type="submit" name="submit" value="Result_Insert" onclick="pass();"   id="txt" class="ButtonR" >Add</button></td>
+								<td width="140" align="center"><button type="submit" name="submit" value="Result_Insert" onclick="pass();"   id="txt" class="ButtonS" >Add</button></td>
 						</tr>
 				</tbody>
 		</table>
 		<p>&nbsp;</p>
 </form>
+</div>
 </body>
 <script src="JS/Result_Insert.js"></script>
 </html>

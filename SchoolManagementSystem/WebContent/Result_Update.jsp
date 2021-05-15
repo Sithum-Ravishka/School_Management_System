@@ -5,9 +5,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Result Insert</title>
+<title>Student Exam Result Update</title>
 
-	<link rel = "stylesheet" type = "text/css" href = "CSS/Result_Insert.css">
+	<link rel = "stylesheet" type = "text/css" href = "CSS/Result_Update.css">
 
 </head>
 <body>
@@ -33,8 +33,8 @@
 		String totalMark = request.getParameter("totalMark");
 		String average = request.getParameter("average");
 %>
-		
-<form action="update" id="form1" name="form1" method="post">
+<div class="img">	
+<form action="update" class="form1" id="form1" name="form1" method="post">
 		<center><p class="nam"> Insert Exam Results Of Student</p></center>
 		<table width="1095" border="0" align="center" cellpadding="0" cellspacing="10">
 				<tbody>
@@ -144,12 +144,13 @@
 				<tbody>
 						<tr>
 								<td width="140" align="center"><input type="submit" class="ButtonC" name="submit" value="Update My Data"></td>
-								<td width="170" align="center"><a href ="useraccount.jsp"><input type="button" name="button" class="ButtonC" id="button" value="Back"></a></td>
+								<td width="170" align="center"><button class="ButtonC"><a href ="Result_Sheet_Teacher.jsp"></a>Back</button></td>
 						</tr>
 				</tbody>
 		</table>
 		<p>&nbsp;</p>
 </form>
+</div>
 </body>
 <script src="JS/Result_Insert.js"></script>
 </html>

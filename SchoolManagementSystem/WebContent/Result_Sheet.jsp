@@ -9,11 +9,21 @@
 <title>Result Sheet</title>
 
 	<link rel = "stylesheet" type = "text/css" href = "CSS/Result_Sheet.css">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
+<script type="text/javascript"></script>
+
+<table width="200" border="0" align="Left">
+		<tbody>
+				<tr>
+						<td align="center"><button class="ButtonC" id="btn"><i class="fa fa-print"></i></button></td>
+				</tr>
+		</tbody>
+		</table>
 <form id="form1" class="form1" name="form1" method="post">
+
 
 
 <c:forEach var="stu" items="${sturDetails}">
@@ -21,7 +31,7 @@
 		<table width="28" border="0" align="right">
 				<tbody>
 						<tr>
-								<td width="22" align="right" bgcolor="#FFFFFF"><input name="imageField" type="image" id="imageField" src="Image/Print.png" width="25" height="25"></td>
+								<td width="22" align="right" bgcolor="#FFFFFF"></td>
 						</tr>
 				</tbody>
 		</table>
@@ -120,14 +130,22 @@
 				</tbody>
 		</table>
 		<p>&nbsp;</p>
-		<table width="176" border="0" align="right">
+		<table width="150" border="0" align="right">
 				<tbody>
 						<tr align="right">
 								<td width="170"><input name="Re-Check Request" type="button" class="ButtonC" id="Re-Check Request" value="Re-Check Request"></td>
 						</tr>
+						
 				</tbody>
 		</table>
 			</c:forEach>
+		
 </form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+<script src="JS/custom.js"></script>
+
 </body>
 </html>
