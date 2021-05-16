@@ -15,17 +15,56 @@
 <body>
 <script type="text/javascript"></script>
 
-<table width="200" border="0" align="center">
-		<tbody>
-				<tr>
-						<td align="center"><button class="ButtonC" id="btn"><i class="fa fa-print"></i></button></td>
-				</tr>
-		</tbody>
-</table>
 
-<form id="form1" class="form1" name="form1" method="post">
+<form id="form1" class="fo" name="form1" method="post">
 
 
+
+<table width="409" border="0" align="center" class= "header"cellpadding="0" cellspacing="10">
+				<tbody>
+						<tr >
+								<td width="258" align="right" class="nam1">Vidyadharsha Maha Vidyalaya</td>
+								<td width="141" align="center"><img src="Image/Picture1.png" class="logo" width="100px" height="120px"/></td>
+								<td width="15" align="center" bgcolor="#FFFFFF" class="LogOut"><p><a href ="MainHome.jsp">Log Out</a></p></td>
+						</tr>
+				</tbody>
+	</table>
+
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+
+<div class = "side-navbar">		
+		<table width="240" border="0" align="left">
+					<tbody>
+							<tr>
+									<td align="center"><a href = "#">Student Management</a></td>
+							</tr>
+							<tr>
+									<td align="center"><a href ="#">Class Management</a></td>
+							</tr>
+							<tr>
+									<td align="center"><a href ="View_Result.jsp">Result Management</a></td>
+							</tr>
+							<tr>
+									<td align="center"><a href ="#">Attendance Management</a></td>
+							</tr>
+							<tr>
+									<td align="center"><a href ="#">Fees Management</a></td>
+							</tr>
+							<tr>
+									<td align="center"><a href ="#">Staff Management</a></td>
+							</tr>
+							<tr>
+									<td align="center"><a href="parent.jsp">Parent Management</a></td>
+							</tr>
+							<tr>
+									<td align="center"><a href ="#">Library Management</a></td>
+							</tr>
+					</tbody>
+			</table>
+	</div>		
+		
+		<div class="img">
 
 <c:forEach var="stu" items="${sturDetails}">
 
@@ -40,7 +79,7 @@
 		<table width="401" border="0" align="center">
 				<tbody>
 						<tr>
-								<td width="395" align="center" class="nam1">Your Exam Result</td>
+								<td width="395" align="center" class="nam11">Your Exam Result</td>
 						</tr>
 				</tbody>
 		</table>
@@ -131,16 +170,9 @@
 				</tbody>
 		</table>
 		<p>&nbsp;</p>
-		<table width="150" border="0" align="right">
-				<tbody>
-						<tr align="right">
-								<td width="170"><input name="Re-Check Request" type="button" class="ButtonC" id="Re-Check Request" value="Re-Check Request"></td>
-						</tr>
-						
-				</tbody>
-		</table>
-			</c:forEach>
 		
+			</c:forEach>
+		</div>
 </form>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -148,5 +180,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
 <script src="JS/Result_Sheet.js"></script>
 
+<table width="200" border="0" align="center"class="img2">
+		<tbody>
+				<tr>
+						<td align="center"><button class="ButtonC" id="btn"><i class="fa fa-print"></i></button></td>
+						<td align="center"><a href ="ResultRecheck.jsp">Re-Check Request</a></td>
+				</tr>
+								
+				</tbody>
+</table>
 </body>
 </html>

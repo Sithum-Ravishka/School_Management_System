@@ -136,3 +136,11 @@ img:hover{
 	transform: scale(1.3);
 	
 }
+.LogOut
+{
+	font-size:15px;
+	font-weight: bold;
+	word-spacing: 12px;
+	color: #ffffff;
+	text-decoration: none;
+}

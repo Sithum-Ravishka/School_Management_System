@@ -11,12 +11,13 @@
 </head>
 <body>
 <div class="img">
-<form action="viewTeacher" class="form1" method="post">
+<form action="#" class="form1" method="post">
 		<table width="409" border="0" align="center" class= "header">
 				<tbody>
 						<tr >
 								<td width="258" align="right" class="nam1">Vidyadharsha Maha Vidyalaya</td>
-								<td width="141" align="center"><img src="Image/Picture1.png" class="logo" width="100px" height="120px"/></td>
+								<td width="60" align="center"><img src="Image/Picture1.png" class="logo" width="100px" height="120px"/></td>
+								<td width="15" align="center" bgcolor="#FFFFFF" class="LogOut"><p><a href ="MainHome.jsp">Log Out</a></p></td>
 						</tr>
 				</tbody>
 		</table>

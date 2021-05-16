@@ -12,6 +12,7 @@
 <div class= "header">
 <img src="Image/Picture1.png" class="logo" width="100px" height="120px"/>
 <h1>Viddyadarsha Maha Vidyalaya</h1>
+<button class="logout" ><a href ="MainHome.jsp">Log Out</a></button>
 </div>
 
 <div class = "side-navbar">
