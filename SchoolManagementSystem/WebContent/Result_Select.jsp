@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Student Term Test Marks</title>
 
-	<link rel = "stylesheet" type = "text/css" href = "CSS/View_Result.css">
+	<link rel = "stylesheet" type = "text/css" href = "CSS/Select_Result.css">
 
 </head>
 <body>
@@ -59,10 +59,10 @@
 			</table>
 	</div>		
 	<div class="img1">
-		<table width="559" border="0" align="center">
+		<table width="725" border="0" align="center">
 				<tbody>
 						<tr>
-								<td width="553" height="41" align="center"><label><span class="nam">Student Term Exam Marks</span><br>
+								<td width="700" height="41" align="center"><label><span class="nam">Student Result Insert /Update /Delete</span><br>
 								</label></td>
 						</tr>
 				</tbody>
@@ -70,29 +70,23 @@
 		<table width="900" border="0" align="center">
 				<tbody>
 						<tr>
-								<td width="286" height="57" align="center"><input type="number" id="admissionNo" name="admissionNo" required="required" class="form-input1" placeholder="Student Admission No*"></td>
-								<td width="300" align="center"><select id="classRoom" name="classRoom"  required="required" class="form-input1">
-										<option selected hidden value="">Select (Class)</option>
-										<option value="6A">6A</option>
-										<option value="6B">6B</option>
-								</select></td>
-								<td width="300" align="center"><select id="semester" name="semester" required="required" class="form-input1">
-										<option selected hidden value="">Select (Semester)</option>
-										<option value="1st Semester">1st Semester</option>
-										<option value="2st Semester">2st Semester</option>
-										<option value="3st Semester">3st Semester</option>
-								</select></td>
-						</tr>
+								<td width="286" height="108" align="center"><a href = "Result_Insert.jsp"><img src="Image/Result_Insert.png" width="102" height="100" alt=""/></a></p>
+										<p><a href = "Result_Insert.jsp" class="i">Student Result Insert</a></p></td>
+								<td width="300" align="center"><a href = "View_Result_Teacher.jsp"><img src="Image/Result_Update.png" width="96" height="100" alt=""/></a>
+										<p><a href = "View_Result_Teacher.jsp" class="i">Student Result Update/Delete</a></p></td>
+								</tr>
 				</tbody>
 		</table>
-		<table width="200" border="0" align="center">
+		<table width="372" border="0" align="center">
 				<tbody>
 						<tr>
-								<td height="78" align="center"><input name="submit" type="submit" class="ButtonC" id="submit" value="Check Result"></td>
+								<td width="366" align="center">You Can Delete Result In Result Update Page</td>
 						</tr>
 				</tbody>
 		</table>
-		</div>
+	
+		<p>&nbsp;</p>
+	</div>
 </form>
 </div>
 </body>

@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<form action=”mailto:sithumravishka20@gmail.com” id="form1" name="form1" method="post" enctype=”multipart/form-data” name=”EmailForm”>
+<form action="https://formspree.io/f/mdoyedqg" method="POST" id="form1" name="form1">
 		<table width="619" border="0" align="center">
 				<tbody>
 						<tr>
@@ -21,7 +21,7 @@
 								<td height="412" align="center"><textarea name=”ContactCommentt” required="required" class="form-input1" id="textarea"></textarea></td>
 						</tr>
 						<tr>
-								<td height="25" align="center"><input name="submit" type="submit" class="ButtonC" id="submit" value="Send"></td>
+								<td height="25" align="center"><button type="submit">Submit</button></td>
 						</tr>
 				</tbody>
 		</table>

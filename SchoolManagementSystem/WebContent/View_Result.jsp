@@ -11,13 +11,57 @@
 </head>
 <body>
 <div class="img">
+
 <form action="view" class="form1" name="form1" method="post">
+		<table width="409" border="0" align="center" class= "header">
+				<tbody>
+						<tr >
+								<td width="258" align="right" class="nam1">Vidyadharsha Maha Vidyalaya</td>
+								<td width="141" align="center"><img src="Image/Picture1.png" class="logo" width="100px" height="120px"/></td>
+						</tr>
+				</tbody>
+		</table>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
 		<p>&nbsp;</p>
-	<div class="img1">
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+<div class = "side-navbar">		
+		<table width="240" border="0" align="left">
+					<tbody>
+							<tr>
+									<td align="center"><a href = "#">Student Management</a></td>
+							</tr>
+							<tr>
+									<td align="center"><a href ="#">Class Management</a></td>
+							</tr>
+							<tr>
+									<td align="center"><a href ="View_Result.jsp">Result Management</a></td>
+							</tr>
+							<tr>
+									<td align="center"><a href ="#">Attendance Management</a></td>
+							</tr>
+							<tr>
+									<td align="center"><a href ="#">Fees Management</a></td>
+							</tr>
+							<tr>
+									<td align="center"><a href ="#">Staff Management</a></td>
+							</tr>
+							<tr>
+									<td align="center"><a href="parent.jsp">Parent Management</a></td>
+							</tr>
+							<tr>
+									<td align="center"><a href ="#">Library Management</a></td>
+							</tr>
+					</tbody>
+			</table>
+	</div>		
+			
+
+<div class="img1">
 		<table width="400" border="0" align="center">
 				<tbody>
 						<tr>

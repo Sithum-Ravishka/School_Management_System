@@ -1,0 +1,66 @@
+@charset "ISO-8859-1";
+body{
+	margin: 0;
+	padding: 0;
+	background-image:url(img/train1.jp);
+	background-position:center;
+	background-size:cover;
+}
+h1{
+	color: #fff;
+}
+.StudentLoginPage{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	 transform: translate(-50%,-50%);
+	 width: 450px;
+	 height: 300px;
+	 padding: 80px 40px;
+	 background-color: rgba(0,0,0,0.6);
+	 border-radius: 20px;
+}
+.StudentLoginPage input{
+	width: 65%;
+	margin-bottom: 20px;
+}
+.lable{
+	color: #fff;
+}
+.StudentLoginPage input[type=text],
+.StudentLoginPage input[type=password]{
+	border:none;
+	border-bottom:1px solid #fff;
+	background: transparent;
+	outline: none;
+	height:35px;
+	color:#fff;
+	font-size:15px;
+}
+.StudentLoginPage input[type=submit]{
+	height: 30px;
+	color: #fff;
+	font-size: 13px;
+	background: red;
+	cursor: pointer;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	margin-top:
+}
+#background{
+	content: '';
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+

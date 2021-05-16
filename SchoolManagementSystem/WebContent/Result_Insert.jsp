@@ -11,8 +11,17 @@
 
 </head>
 <body>
-<div class="img">
+
 <form action="reinsert" class="form1" id="form1" name="form1" method="post">
+<table width="409" border="0" align="center" class= "header">
+				<tbody>
+						<tr >
+								<td width="258" align="right" class="nam1">Vidyadharsha Maha Vidyalaya</td>
+								<td width="141" align="center"><img src="Image/Picture1.png" class="logo" width="100px" height="120px"/></td>
+						</tr>
+				</tbody>
+		</table>
+		<div class="img">
 		<center><p class="nam"> Insert Exam Results Of Student</p></center>
 		<table width="1095" border="0" align="center" cellpadding="0" cellspacing="10">
 				<tbody>

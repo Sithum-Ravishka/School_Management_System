@@ -15,13 +15,14 @@
 <body>
 <script type="text/javascript"></script>
 
-<table width="200" border="0" align="Left">
+<table width="200" border="0" align="center">
 		<tbody>
 				<tr>
 						<td align="center"><button class="ButtonC" id="btn"><i class="fa fa-print"></i></button></td>
 				</tr>
 		</tbody>
-		</table>
+</table>
+
 <form id="form1" class="form1" name="form1" method="post">
 
 
@@ -56,7 +57,7 @@
 						</tr>
 						<tr>
 								<td>School Name :</td>
-								<td>Ananda Shashtralaya - matugama</td>
+								<td>A/ Vidyadharsha Central College</td>
 								<td>Admission No :</td>
 								<td>${stu.admissionNo}</td>
 								<td>Year :</td>
@@ -145,7 +146,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
-<script src="JS/custom.js"></script>
+<script src="JS/Result_Sheet.js"></script>
 
 </body>
 </html>

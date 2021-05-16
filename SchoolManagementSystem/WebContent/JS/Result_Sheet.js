@@ -2,7 +2,7 @@ $(document).on('click','#btn',function(){
 let pdf = new jsPDF();
 let section=$('body');
 let page= function() {
-    pdf.save('pagename.pdf');
+    pdf.save('ResultSheet.pdf');
    
 };
 pdf.addHTML(section,page);
