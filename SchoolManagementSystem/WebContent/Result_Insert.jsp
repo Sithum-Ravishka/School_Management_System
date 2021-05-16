@@ -167,7 +167,7 @@
 				<tbody>
 						<tr>
 								<td width="140" align="center"><button type="reset" class="ButtonR" name="reset" id="reset" value="Reset">Reset</button></td>
-								<td width="140" align="center"><button type="submit" name="submit" value="Result_Insert" onclick="demo()"   id="txt" class="ButtonS" >Add</button></td>
+								<td width="140" align="center"><button type="submit" name="submit" value="Result_Insert" onclick="pass();"   id="txt" class="ButtonS" >Add</button></td>
 						</tr>
 				</tbody>
 		</table>
