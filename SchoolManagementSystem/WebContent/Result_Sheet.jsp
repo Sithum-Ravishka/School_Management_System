@@ -37,7 +37,7 @@
 		<table width="240" border="0" align="left">
 					<tbody>
 							<tr>
-									<td align="center"><a href = "#">Student Management</a></td>
+									<td align="center"><a href = "HomeStu.jsp">Student Management</a></td>
 							</tr>
 							<tr>
 									<td align="center"><a href ="#">Class Management</a></td>
