@@ -37,7 +37,7 @@ public class ViewResultTeacherServlet extends HttpServlet {
 		} else {
 			out.println("<script type='text/javascript'>");
 			out.println("alert('Your Entered Details Are Wrong');");
-			out.println("location='unsuccess.jsp'");
+			out.println("location='View_Result_Teacher.jsp'");
 			out.println("</script>");
 		}
 

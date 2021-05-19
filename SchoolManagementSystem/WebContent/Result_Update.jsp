@@ -186,7 +186,7 @@
 		<table width="420" border="0" align="center">
 				<tbody>
 						<tr>
-								<td width="140" align="center"><input type="submit" class="ButtonC" name="submit" value="Update My Data"></td>
+								<td width="140" align="center"><input type="submit" class="ButtonC" name="submit" value="Update Result"></td>
 								<td width="170" align="center"><button class="ButtonC"><a href ="Result_Sheet_Teacher.jsp"></a>Back</button></td>
 						</tr>
 				</tbody>

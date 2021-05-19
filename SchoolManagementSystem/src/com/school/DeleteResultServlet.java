@@ -31,7 +31,7 @@ public class DeleteResultServlet extends HttpServlet {
 		
 		if(isTrue == true) {
 			
-			RequestDispatcher dis = request.getRequestDispatcher("Result_Insert.jsp");
+			RequestDispatcher dis = request.getRequestDispatcher("Result_Select.jsp");
 			dis.forward(request, response);
 		}else
 		{

@@ -16,7 +16,7 @@
 </div>
 
 <div class = "side-navbar">
-<a href = "#">Student Profile</a>
+<a href = "HomeStu.jsp">Student Profile</a>
 <a href ="#">Class Information</a>
 <a href ="View_Result.jsp">Exam Results</a>
 <a href ="#">Attendance Marks</a>
@@ -27,7 +27,7 @@
 </div>
 
 <div class="displayMain">
-<img src="Image/student.png" class="student" width="200px" height="150px"/><a href = "#" class="i">Student Profile</a>
+<img src="Image/student.png" class="student" width="200px" height="150px"/><a href = "HomeStu.jsp" class="i">Student Profile</a>
 <img src="Image/class.png" class="class" width="200px" height="150px"/><a href ="#" class="b">Class Information</a>
 <img src="Image/res.png" class="res" width="200px" height="150px"/><a href ="View_Result.jsp" class="c">&nbsp;&nbsp;&nbsp;Exam Results</a>
 <img src="Image/att.png" class="att" width="200px" height="150px"/><a href ="#" class="d">Attendance Marks</a>

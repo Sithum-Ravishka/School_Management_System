@@ -12,6 +12,8 @@
 </head>
 <body>
 
+
+
 <form action="reinsert" class="form1" id="form1" name="form1" method="post">
 <table width="409" border="0" align="center" class= "header"cellpadding="0" cellspacing="10">
 				<tbody>
@@ -63,8 +65,8 @@
 				<tbody>
 						<tr>
 								<td width="360">  <input type="text" name="StudentName" required="required" class="form-input" placeholder="Student Name *"></td>
-								<td width="360"><input type="text" name="AdmissionNo" required="required" class="form-input" form="form1" placeholder="Admission No *"></td>
-								<td width="360"><input name="Year" type="number" required="required" class="form-input" id="Year" placeholder="Year" max="2020" min="2002"></td>
+								<td width="360"><input type="number" name="AdmissionNo" required="required" class="form-input" form="form1" placeholder="Admission No *"></td>
+								<td width="360"><input name="Year" type="number" required="required" class="form-input" id="Year" placeholder="Year" max="2030" min="2020"></td>
 						</tr>
 						<tr>
 								<td><select name="classroom" required="required" class="form-input" id="classroom">

@@ -36,10 +36,11 @@ public class ViewResultServlet extends HttpServlet {
 			dis.forward(request, response);
 		} else {
 			out.println("<script type='text/javascript'>");
-			out.println("alert('Your username op incorrect');");
-			out.println("location='unsuccess.jsp'");
+			out.println("alert('Your Entered Details Are Wrong');");
+			out.println("location='View_Result.jsp'");
 			out.println("</script>");
 		}
+
 
 }
 

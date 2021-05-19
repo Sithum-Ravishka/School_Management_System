@@ -50,4 +50,140 @@
     	<servlet-name>DeleteResult</servlet-name>
     	<url-pattern>/delete</url-pattern>
     </servlet-mapping>
+    			
+	<servlet>
+		<servlet-name>HomeServlet</servlet-name>
+		<servlet-class>com.school.HomeServlet</servlet-class>	
+	</servlet> 
+	
+	<servlet-mapping>
+		<servlet-name>HomeServlet</servlet-name>
+		<url-pattern>/add</url-pattern>	
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>HomeTeacherServlet</servlet-name>
+		<servlet-class>com.school.HomeTeacherServlet</servlet-class>	
+	</servlet> 
+	
+	<servlet-mapping>
+		<servlet-name>HomeTeacherServlet</servlet-name>
+		<url-pattern>/TeaLogin</url-pattern>	
+	</servlet-mapping> 
+
+<servlet>
+				<servlet-name>View1</servlet-name>
+				<servlet-class>com.school.ViewStudentServlet</servlet-class>
+			</servlet>
+			
+			<servlet-mapping>
+				<servlet-name>View1</servlet-name>
+				<url-pattern>/tom</url-pattern>
+			</servlet-mapping>
+			
+			
+			<servlet>
+				<servlet-name>StudentInsert</servlet-name>
+				<servlet-class>com.school.StuDataUploadServlet</servlet-class>
+			</servlet>
+			
+			<servlet-mapping>
+				<servlet-name>StudentInsert</servlet-name>
+				<url-pattern>/uploadServlet</url-pattern>
+			</servlet-mapping>
+			
+			
+			<servlet>
+				<servlet-name>updateStudent</servlet-name>
+				<servlet-class>com.school.UpdateStudentServlet</servlet-class>
+			</servlet>
+			
+			<servlet-mapping>
+				<servlet-name>updateStudent</servlet-name>
+				<url-pattern>/uploadStudentData</url-pattern>
+			</servlet-mapping>
+			
+			
+			
+			<servlet>
+				<servlet-name>updatePicture</servlet-name>
+				<servlet-class>com.school.UpdateImageServlet</servlet-class>
+			</servlet>
+			
+			<servlet-mapping>
+				<servlet-name>updatePicture</servlet-name>
+				<url-pattern>/live</url-pattern>
+			</servlet-mapping>
+			
+			
+			
+			<servlet>
+				<servlet-name>deleteStudent</servlet-name>
+				<servlet-class>com.school.DeleteStudentServlet</servlet-class>
+			</servlet>
+			
+			<servlet-mapping>
+				<servlet-name>deleteStudent</servlet-name>
+				<url-pattern>/delete1</url-pattern>
+			</servlet-mapping>
+			
+			
+				
+			<servlet>
+				<servlet-name>login</servlet-name>
+				<servlet-class>com.school.LoginStudentServlet</servlet-class>
+			</servlet>
+			
+			<servlet-mapping>
+				<servlet-name>login</servlet-name>
+				<url-pattern>/log</url-pattern>
+			</servlet-mapping>
+			
+			
+			<servlet>
+				<servlet-name>updateStuSide</servlet-name>
+				<servlet-class>com.school.UpdateStuSideServlet</servlet-class>
+			</servlet>
+			
+			<servlet-mapping>
+				<servlet-name>updateStuSide</servlet-name>
+				<url-pattern>/update1</url-pattern>
+			</servlet-mapping>
+			
+			
+			
+			<servlet>
+				<servlet-name>changePassword</servlet-name>
+				<servlet-class>com.school.ChangePassword</servlet-class>
+			</servlet>
+			
+			<servlet-mapping>
+				<servlet-name>changePassword</servlet-name>
+				<url-pattern>/changePswd</url-pattern>
+			</servlet-mapping>
+			
+			
+			
+			<servlet>
+				<servlet-name>searchName</servlet-name>
+				<servlet-class>com.school.SearchByNameServlet</servlet-class>
+			</servlet>
+			
+			<servlet-mapping>
+				<servlet-name>searchName</servlet-name>
+				<url-pattern>/name</url-pattern>
+			</servlet-mapping>
+			
+			
+			<servlet>
+				<servlet-name>uploadAlStudent</servlet-name>
+				<servlet-class>com.school.adavanceLevelStudentRegServlet</servlet-class>
+			</servlet>
+			
+			<servlet-mapping>
+				<servlet-name>uploadAlStudent</servlet-name>
+				<url-pattern>/advanceLevelUploadServlet</url-pattern>
+			</servlet-mapping>
+
+
 </web-app>

@@ -9,20 +9,21 @@ body{
 h1{
 	color: #fff;
 }
+h2{
+	color: #fff;
+}
 .StudentLoginPage{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%,-50%);
-	-moz-transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	-o-transform: translate(-50%,-50%);
-	 transform: translate(-50%,-50%);
-	 width: 450px;
+	 position:fixed;
+	 width: 620px;
 	 height: 300px;
 	 padding: 80px 40px;
 	 background-color: rgba(0,0,0,0.6);
-	 border-radius: 20px;
+	 border-radius: 100px;
+	 margin-top:205px;
+	 margin-left:560px;
+	 background-repeat: none;
+	 background-position:center;
+	 background-size:cover;
 }
 .StudentLoginPage input{
 	width: 65%;
@@ -62,5 +63,58 @@ h1{
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
+}
+.side-navbar{
+	height:100%;
+	width:260px;
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+	background-color: #000080;
+	overflow-x:hidden;
+	padding-top:20px;
+}
+ .side-navbar a{
+ 
+ padding:50px 10px 10px 50px;
+ text-decoration: none;
+ font-size:18px;
+ font-weight:900;
+ display:block;
+ font-family: "Times New Roman", Times, serif;
+ color:	#f0ffff;
+ }
+ 
+ .side-navbar a:hover{
+ color:#ffff00;
+ -webkit-transform: scale(1.3);
+	transform: scale(1.3);	
+ 
+ }
+ 
+.header{
+	width:1300px;
+	height:150px;
+	margin:auto;
+	position: absolute;
+	left:16%;
+	top:-2%;
+	position:fixed;	
+	z-index:1;
+	background-color: 	#000080;
+}
+
+h1{
+	color:#f0ffff;
+	left:28%;
+	position: absolute;
+	top:40%;
+}
+
+.logo{
+	left:68%;
+	position: absolute;
+	top:16%;
 }
 

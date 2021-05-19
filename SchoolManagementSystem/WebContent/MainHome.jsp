@@ -4,82 +4,101 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Student Term Test Marks</title>
 
-	<link rel = "stylesheet" type = "text/css" href = "CSS/Select_Result.css">
-
+<title>login page</title>
+<link rel="stylesheet" type="text/css" href="CSS/login.css">
 </head>
 <body>
-<div class="img">
-<form action="viewTeacher" class="form1" method="post">
-		<table width="409" border="0" align="center" class= "header">
-				<tbody>
-						<tr >
-								<td width="258" align="right" class="nam1">Vidyadharsha Maha Vidyalaya</td>
-								<td width="141" align="center"><img src="Image/Picture1.png" class="logo" width="100px" height="120px"/></td>
-						</tr>
-				</tbody>
-		</table>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-<div class = "side-navbar">		
-		<table width="240" border="0" align="left">
-					<tbody>
-							<tr>
-									<td align="center"><a href = "#">Student Management</a></td>
-							</tr>
-							<tr>
-									<td align="center"><a href ="#">Class Management</a></td>
-							</tr>
-							<tr>
-									<td align="center"><a href ="#">Result Management</a></td>
-							</tr>
-							<tr>
-									<td align="center"><a href ="#">Attendance Management</a></td>
-							</tr>
-							<tr>
-									<td align="center"><a href ="#">Fees Management</a></td>
-							</tr>
-							<tr>
-									<td align="center"><a href ="#">Staff Management</a></td>
-							</tr>
-							<tr>
-									<td align="center"><a href="#">Parent Management</a></td>
-							</tr>
-							<tr>
-									<td align="center"><a href ="#">Library Management</a></td>
-							</tr>
-					</tbody>
-			</table>
-	</div>		
-	<div class="img1">
-		<table width="725" border="0" align="center">
-				<tbody>
-						<tr>
-								<td width="700" height="41" align="center"><label><span class="nam">Select Your Student OR School Staff</span><br>
-								</label></td>
-						</tr>
-				</tbody>
-		</table>
-		<table width="900" border="0" align="center">
-				<tbody>
-						<tr>
-								<td width="286" height="108" align="center"><a href = "HomePageStudent.jsp"><img src="Image/Student2.png" width="125" height="120" alt=""/></a>
-										<p><a href = "HomePageStudent.jsp" class="i">Student Login</a></p></td>
-								<td width="300" align="center"><a href = "HomePage.jsp"><img src="Image/Teacher.png" width="125" height="120" alt=""/></a>
-										<p><a href = "HomePage.jsp" class="i">Staff Login</a></p></td>
-								</tr>
-				</tbody>
-		</table>
-		<p>&nbsp;</p>
-	</div>
+<div class = "side-navbar">
+<a href = "MainHome.jsp">Home</a>
+<a href ="#">About School</a>
+<a href ="#">Administration</a>
+<a href ="#">Co-Curicular</a>
+<a href ="#">News</a>
+<a href ="#">Contacts</a>
+</div>
+<div class= "header">
+<img src="images/Picture1.png" class="logo" width="100px" height="120px"/>
+<h1 class="namescl">Viddyadarsha Maha Vidyalaya</h1>
+</div>
+
+
+<h2 class="logTopic">. . . . Login . .  . .</h2>
+<div class="login">
+<form method="post" action="#">
+<img src="images/addmin.png" class="addmin2" width="80px" height="80px"/>
+	
+	<label>User Name : </label><br>
+	<input type="text" name="user" id="Uname"><br>
+	
+	<label>Password : </label><br>
+	<input type="password" name="pass" id="pass"><br><br>
+ 
+ <input type="submit" value="Login as Admin" id="log" class="admin"><br>
+ 
 </form>
+</div>
+
+
+
+<div class="parantLog">
+<form method="post" action="#">
+<img src="images/perent.png" class="addmin" width="80px" height="80px"/>
+	
+	<label>User Name : </label>
+	<input type="text" name="nic" id="nic"><br>
+	
+	<label>Password : </label>
+	<input type="password" name="sid" id="sid"><br><br>
+ 
+ <input type="submit" value="Login as Parent" id="log"><br>
+</form>
+</div>
+
+<div class="StaffLog">
+<form method="post" action="TeaLogin">
+<img src="images/tech.png" class="addmin" width="80px" height="80px"/>
+	
+	<label>Teacher ID : </label>
+	<input type="text" name="tId" id="tId" required="required"><br>
+	
+	<label>Password : </label>
+	<input type="password" name="password" id="password" required="required"><br><br>
+ 
+ <input type="submit" value="Login as Teacher" id="log"><br>
+</form>
+</div>
+
+
+
+<div class="StudentLog">
+<form method="post" action="add">
+<img src="images/stu.png" class="addmin" width="80px" height="80px"/>
+	
+	<label>Admission No : </label>
+<input type="text" name="addNo" id="addNo" required="required"><br>
+
+<label>Password : </label>
+<input type="password" name="pwd" id="pwd" required="required"><br><br>
+
+<input type="submit" value="Login as Student" id="log"><br>
+</form>
+</div>
+<img src="images/school.png" class="school" width="40%" height="50%"/>
+
+
+
+<div class="footer-main-div">
+<div class="footer-social-icons">
+<ul>
+	<li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+	<li><a href="#" target="blank"><i class="fa fa-youtube"></i></a></li>
+	<li><a href="#" target="blank"><i class="fa fa-email"></i></a></li>
+	
+</ul>
+
+
+</div>
 </div>
 </body>
 </html>
